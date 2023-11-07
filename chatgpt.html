@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hangman</title>
+  </head>
+    <body>
+      <h1>Hangman</h1>
+      
+      <table id="center">
+        <tr>
+          <td class="word-box"></td>
+          <td class="word-box"></td>
+          <td class="word-box"></td>
+          <td class="word-box"></td>
+          <td class="word-box"></td>
+          <td class="word-box"></td>
+          <td class="word-box"></td>
+          <td class="word-box"></td>
+        </tr>
+        <tr>
+          <td class="hint-row">Hint: This is a hint</td>
+        </tr>
+      </table>
+      <br>
+      
+      <div id="attempts">
+        Number of attempts remaining: 6
+      </div>
+      
+      <div id="already-guessed">
+        Already Guessed Letters:
+      </div>
+      
+      <div id = "guess-box">
+      <input type="text" id="guess" maxlength="1">
+      <br>
+      <br>
+      </div>
+      <div id="guess-click-box">
+      <button onclick="guessLetter()">Guess</button>
+      </div>
+    </body>
+
+</html>
